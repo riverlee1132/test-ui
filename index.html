@@ -2,6 +2,7 @@
      <head>
           <meta charset="utf-8">
           <title>안녕</title>
+          <link rel="stylesheet" href="style.css">
           <!-- clarity 추적 코드 -->
           <script type="text/javascript">
                (function (c, l, a, r, i, t, y) {
@@ -12,6 +13,72 @@
           </script>
      </head>
 <body>
-     <h1>안녕</h1>
+     <header>
+          <div class="container">
+               <h1>Company Name</h1>
+               <nav>
+                    <ul>
+                         <li><a href="#about">About</a></li>
+                         <li><a href="#services">Services</a></li>
+                         <li><a href="#team">Team</a></li>
+                         <li><a href="#contact">Contact</a></li>
+                    </ul>
+               </nav>
+          </div>
+     </header>
+     <section id="about">
+          <div class="container">
+               <h2>About Us</h2>
+               <p>Welcome to our company. We provide excellent services to our customers.</p>
+          </div>
+     </section>
+     
+     <section id="services">
+          <div class="container">
+               <h2>Our Services</h2>
+               <ul>
+                    <li>Service 1</li>
+                    <li>Service 2</li>
+                    <li>Service 3</li>
+               </ul>
+          </div>
+     </section>
+     
+     <section id="team">
+          <div class="container">
+               <h2>Our Team</h2>
+               <div class="team-member">
+                    <h3>John Doe</h3>
+                    <p>CEO</p>
+               </div>
+               <div class="team-member">
+                    <h3>Jane Smith</h3>
+                    <p>CTO</p>
+               </div>
+          </div>
+     </section>
+     
+     <section id="contact">
+          <div class="container">
+               <h2>Contact Us</h2>
+               <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+     
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+     
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+     
+                    <button type="submit">Send</button>
+               </form>
+          </div>
+     </section>
+     <footer>
+          <div class="container">
+               <p>&copy; 2024 Company Name. All rights reserved.</p>
+          </div>
+     </footer>
 </body>
      </html>
