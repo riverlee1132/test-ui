@@ -1,59 +1,56 @@
-<html lang="ko">
+<!DOCTYPE html>
+<html lang="en">
      <head>
           <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>UI테스트</title>
      </head>
-<body>
-     <!-- 최근 글 -->
-      <h3>최근 글</h3>
-      <form id="viewFrm">
-          <div id="subject">제목:</div>
-          <div id="writer">제목:</div>
-          <div id="date">제목:</div>
-          <div id="content">제목:</div>
-      </form>
-      <button id="modify">수정</button>
-      <button id="delete">삭제</button>
-     <!-- 게시판 -->
-      <h3>게시판</h3>
-      <table border="1">
-          <thead>
-               <tr>
-                    <td>번호</td>
-                    <td>글제목</td>
-                    <td>작성자</td>
-                    <td>등록일</td>
-                    <td>조회수</td>
-               </tr>
-          </thead>
-          <tbody></tbody>
-      </table>
-     <button type="button">글쓰기</button>
-     <!-- 글 작성하기 -->
-     <h3>글 작성</h3>
-     <form id="writeFrm">
-          <div>제목: <input type="text" name="subject"></div>
-          <div>작성자: <input type="text" name="writer"></div>
-          <div>내용: <textarea name="content"></textarea></div>
-          <input type="submit" value="글 작성">
-     </form>
-     <!-- 글 수정하기 -->
-     <h3>글 수정</h3>
-     <form id="writeFrm">
-          <div>제목: <input type="text" name="subject"></div>
-          <div>작성자: <input type="text" name="writer"></div>
-          <div>내용: <textarea name="content"></textarea></div>
-          <input type="submit" value="수정 완료">
-     </form>
-     <!-- 자바스크립트 -->
-     <!-- this is C -->
-      <script>
-          const writeFrm = document.querySelector('#writeFrm');
-          const submitHandler = (e) => {
-               e.preventDefault();
-               console.log(e);
-          };
-          writeFrm.addEventListener("submit", submitHandler);
-      </script>
-</body>
-     </html>
+     <body>
+          <!-- 최근 글 -->
+          <h3>최근 글</h3>
+          <form id="viewFrm">
+               <div id="subject">제목:</div>
+               <div id="writer">제목:</div>
+               <div id="date">제목:</div>
+               <div id="content">제목:</div>
+          </form>
+          <button id="modify">수정</button>
+          <button id="delete">삭제</button>
+          <hr>
+
+          <!-- 게시판 -->
+          <h3>게시판</h3>
+          <table border="1">
+               <thead>
+                    <tr>
+                         <td>번호</td>
+                         <td>글제목</td>
+                         <td>작성자</td>
+                         <td>등록일</td>
+                         <td>조회수</td>
+                    </tr>
+               </thead>
+               <tbody></tbody>
+          </table>
+          <button type="button">글쓰기</button>
+          <hr>
+
+          <!-- 글 작성하기 -->
+          <h3>글 작성</h3>
+          <form id="writeFrm">
+               <div>제목: <input type="text" name="subject"></div>
+               <div>작성자: <input type="text" name="writer"></div>
+               <div>내용: <textarea name="content"></textarea></div>
+               <input type="submit" value="글 작성">
+          </form>
+          <hr>
+
+          <!-- 글 수정하기 -->
+          <h3>글 수정</h3>
+          <form id="writeFrm2">
+               <div>제목: <input type="text" name="subject"></div>
+               <div>작성자: <input type="text" name="writer"></div>
+               <div>내용: <textarea name="content"></textarea></div>
+               <input type="submit" value="수정 완료">
+          </form>
+     </body></html>
