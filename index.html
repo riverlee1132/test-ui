@@ -1,84 +1,59 @@
-<html>
+<html lang="ko">
      <head>
           <meta charset="utf-8">
           <title>UI테스트</title>
-          <link rel="stylesheet" href="style.css">
-          <!-- clarity 추적 코드 -->
-          <script type="text/javascript">
-               (function (c, l, a, r, i, t, y) {
-                    c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-                    t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-                    y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-               })(window, document, "clarity", "script", "n4jc8hbrkh");
-          </script>
      </head>
 <body>
-     <header>
-          <div class="container">
-               <h1>Company Name</h1>
-               <nav>
-                    <ul>
-                         <li><a href="#about">About</a></li>
-                         <li><a href="#services">Services</a></li>
-                         <li><a href="#team">Team</a></li>
-                         <li><a href="#contact">Contact</a></li>
-                    </ul>
-               </nav>
-          </div>
-     </header>
-     <section id="about">
-          <div class="container">
-               <h2>About Us</h2>
-               <p>Welcome to our company. We provide excellent services to our customers.</p>
-          </div>
-     </section>
-     
-     <section id="services">
-          <div class="container">
-               <h2>Our Services</h2>
-               <ul>
-                    <li>Service 1</li>
-                    <li>Service 2</li>
-                    <li>Service 3</li>
-               </ul>
-          </div>
-     </section>
-     
-     <section id="team">
-          <div class="container">
-               <h2>Our Team</h2>
-               <div class="team-member">
-                    <h3>John Doe</h3>
-                    <p>CEO</p>
-               </div>
-               <div class="team-member">
-                    <h3>Jane Smith</h3>
-                    <p>CTO</p>
-               </div>
-          </div>
-     </section>
-     
-     <section id="contact">
-          <div class="container">
-               <h2>Contact Us</h2>
-               <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name">
-     
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
-     
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message"></textarea>
-     
-                    <button type="submit">Send</button>
-               </form>
-          </div>
-     </section>
-     <footer>
-          <div class="container">
-               <p>&copy; 2024 Company Name. All rights reserved.</p>
-          </div>
-     </footer>
+     <!-- 최근 글 -->
+      <h3>최근 글</h3>
+      <form id="viewFrm">
+          <div id="subject">제목:</div>
+          <div id="writer">제목:</div>
+          <div id="date">제목:</div>
+          <div id="content">제목:</div>
+      </form>
+      <button id="modify">수정</button>
+      <button id="delete">삭제</button>
+     <!-- 게시판 -->
+      <h3>게시판</h3>
+      <table border="1">
+          <thead>
+               <tr>
+                    <td>번호</td>
+                    <td>글제목</td>
+                    <td>작성자</td>
+                    <td>등록일</td>
+                    <td>조회수</td>
+               </tr>
+          </thead>
+          <tbody></tbody>
+      </table>
+     <button type="button">글쓰기</button>
+     <!-- 글 작성하기 -->
+     <h3>글 작성</h3>
+     <form id="writeFrm">
+          <div>제목: <input type="text" name="subject"></div>
+          <div>작성자: <input type="text" name="writer"></div>
+          <div>내용: <textarea name="content"></textarea></div>
+          <input type="submit" value="글 작성">
+     </form>
+     <!-- 글 수정하기 -->
+     <h3>글 수정</h3>
+     <form id="writeFrm">
+          <div>제목: <input type="text" name="subject"></div>
+          <div>작성자: <input type="text" name="writer"></div>
+          <div>내용: <textarea name="content"></textarea></div>
+          <input type="submit" value="수정 완료">
+     </form>
+     <!-- 자바스크립트 -->
+     <!-- this is C -->
+      <script>
+          const writeFrm = document.querySelector('#writeFrm');
+          const submitHandler = (e) => {
+               e.preventDefault();
+               console.log(e);
+          };
+          writeFrm.addEventListener("submit", submitHandler);
+      </script>
 </body>
      </html>
